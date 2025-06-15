@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="login-container">
+    <h2>Welcome Back!</h2>
+    <div class="login-box">
+      <h3>Secure Access</h3>
+      <p>Login to your account or create a new one to continue.</p>
+      <form>
+        <label>Email Address</label>
+        <input type="email" placeholder="your@example.com" required />
+
+        <label>Password</label>
+        <div class="password-wrapper">
+          <input type="password" placeholder="Enter your password" required />
+          <span class="eye-icon">👁️</span>
+        </div>
+
+        <div class="options">
+          <label><input type="checkbox" /> Remember Me</label>
+          <a href="#">Forgot Password?</a>
+        </div>
+
+        <button class="login-btn" type="submit">Login Securely</button>
+      </form>
+
+      <div class="divider"><span>OR</span></div>
+
+      <button class="google-btn">Continue with Google</button>
+      <button class="apple-btn">Continue with Apple</button>
+
+      <p class="signup">Don’t have an account? <a href="#">Sign Up</a></p>
+    </div>
+  </div>
+</body>
+</html>
