@@ -1,3 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9fc;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 16px;
+  background-color: #fff;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 90px; /* Space for bottom nav */
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.icon-btn {
+  text-decoration: none;
+  font-size: 22px;
+  color: #333;
+  padding: 5px 10px;
+}
+
+.bell {
+  font-size: 20px;
+  color: #999;
+}
+
+/* QR Placeholder */
+.qr-placeholder {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+  background-color: #f1f0f5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  margin: 20px auto;
+  justify-content: center;
+  gap: 10px;
+}
+
+.tabs button {
+  padding: 8px 20px;
+  border: none;
+  background-color: #f1f0f5;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #555;
+}
+
+.tabs button.active {
+  background-color: #4c4cff;
+  color: white;
+}
+
+/* Profile Card */
+.profile-card {
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.profile-content {
+  text-align: center;
+  padding: 20px 20px 0;
+}
+
+.profile-pic {
+  width: 70px;
+  height: 70px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+}
+
+.user-name {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.subtext {
+  color: gray;
+  font-size: 14px;
+}
+
+.child-info {
+  margin: 16px 0;
+}
+
+.status {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.status.ready {
+  background-color: #4c4cff;
+  color: white;
+}
+
+.status.not-ready {
+  background-color: #ff4c4c;
+  color: white;
+}
+
+/* Acknowledge Button */
+.ack-button {
+  background-color: #4c4cff;
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 15px;
+  font-weight: bold;
+  width: 100%;
+  cursor: pointer;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Bottom Navigation Bar */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  border-top: 1px solid #e0e0e0;
+  padding: 6px 0;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+  height: 35px; /* Thinner nav bar */
+}
+
+.nav-center-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px; /* Wider spacing */
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  font-size: 12px;
+}
+
+.nav-item.active {
+  color: #4c4cff;
+  font-weight: bold;
+}
+
+.nav-icon {
+  font-size: 18px;
+  line-height: 18px;
+  margin-bottom: 2px;
+}
+
+.nav-label {
+  font-size: 11px;
+  line-height: 11px;
+}
+
+
+
+
+
 
 /* dashboard.css */
 * {

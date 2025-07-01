@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Authorization Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <div class="header">
+      <a href="dashboard.html" class="icon-btn">&larr;</a>
+      <h2>Authorization Hub</h2>
+      <a href="#" class="icon-btn bell">&#128276;</a>
+    </div>
+
+    <!-- QR Scan Placeholder -->
+    <div class="qr-placeholder">
+      <div class="qr-inner">Tap to Scan QR Code</div>
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="active">Scan QR</button>
+      <button>Enter OTP</button>
+    </div>
+
+    <!-- Profile Card -->
+    <div class="profile-card">
+      <div class="profile-content">
+        <div class="profile-pic"></div>
+        <h3 class="user-name">[User Name]</h3>
+        <p class="subtext">[Relationship]</p>
+        <div class="child-info">
+          <p><strong>Child:</strong> <span class="child-name">[Child's Name]</span></p>
+          <span class="status ready">Ready for Pickup</span>
+        </div>
+      </div>
+      <button class="ack-button">Acknowledge Pickup</button>
+    </div>
+
+    <!-- Bottom Nav -->
+    <div class="bottom-nav">
+      <div class="nav-center-group">
+        <a href="home.html" class="nav-item">
+          <div class="nav-icon">⌂</div>
+          <div class="nav-label">Home</div>
+        </a>
+        <a href="scan.html" class="nav-item active">
+          <div class="nav-icon">⎘</div>
+          <div class="nav-label">QR Scan</div>
+        </a>
+        <a href="history.html" class="nav-item">
+          <div class="nav-icon">☰</div>
+          <div class="nav-label">History</div>
+        </a>
+        <a href="settings.html" class="nav-item">
+          <div class="nav-icon">⚙</div>
+          <div class="nav-label">Settings</div>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
