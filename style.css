@@ -1,3 +1,163 @@
+/*Admindashboard.css*/
+/* General Layout */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f2f2f2;
+}
+
+.dashboard {
+  max-width: 400px;
+  margin: 40px auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+/* Header */
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.top-header h2 {
+  margin: 0;
+}
+
+.admin-avatar {
+  width: 32px;
+  height: 32px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+/* Dropdown Sections */
+.dropdown {
+  margin-bottom: 20px;
+}
+
+.dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+}
+
+.section-title {
+  margin-right: 10px;
+}
+
+.dropdown-link {
+  font-size: 14px;
+  color: #007bff;
+  margin-left: 10px;
+}
+
+/* User Card */
+.user-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 2px;
+  margin-top: 10px;
+  position: relative;
+  gap: 40px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  background-color: #ddd;
+  border-radius: 50%;
+}
+
+.user-info {
+  flex-grow: 1;
+}
+
+.user-info h4,
+.user-info p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.placeholder-name {
+  color: #aaa;
+  font-style: italic;
+}
+
+.placeholder-email {
+  color: #bbb;
+  font-style: italic;
+}
+
+/* Menu */
+.menu-container {
+  position: relative;
+}
+
+.menu-btn {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #666;
+}
+
+.menu-dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 30px;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.menu-dropdown button {
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  background: white;
+  border: none;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.menu-dropdown button:last-child {
+  border-bottom: none;
+}
+
+.menu-dropdown button:hover {
+  background: #f0f0f0;
+}
+
+.menu-dropdown.show {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
 /*security.css*/
 body {
   font-family: 'Inter', sans-serif;

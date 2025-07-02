@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Header with admin avatar -->
+    <header class="top-header">
+      <h2>Admin Dashboard</h2>
+      <div class="admin-avatar"></div>
+    </header>
+
+    <!-- Pending Verification -->
+    <details open class="dropdown">
+      <summary class="dropdown-header">
+        <span class="section-title">Pending Verification</span>
+        <span class="dropdown-link">Verify User ⌄</span>
+      </summary>
+
+      <!-- User Cards -->
+      <div class="user-card">
+        <div class="avatar"></div>
+        <div class="user-info">
+          <h4 class="placeholder-name">[User Name]</h4>
+          <p class="placeholder-email">[email@example.com]</p>
+        </div>
+        <div class="menu-container">
+          <button class="menu-btn">⋯</button>
+          <div class="menu-dropdown">
+            <button>Verify</button>
+            <button>Delete</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="user-card">
+        <div class="avatar"></div>
+        <div class="user-info">
+          <h4 class="placeholder-name">[User Name]</h4>
+          <p class="placeholder-email">[email@example.com]</p>
+        </div>
+        <div class="menu-container">
+          <button class="menu-btn">⋯</button>
+          <div class="menu-dropdown">
+            <button>Verify</button>
+            <button>Delete</button>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <!-- Registered Users -->
+    <details class="dropdown">
+      <summary class="dropdown-header">
+        <span class="section-title">Registered Users</span>
+        <span class="dropdown-link">View ⌄</span>
+      </summary>
+
+      <!-- Registered User Cards -->
+      <div class="user-card">
+        <div class="avatar"></div>
+        <div class="user-info">
+          <h4 class="placeholder-name">[User Name]</h4>
+          <p class="placeholder-email">[email@example.com]</p>
+        </div>
+        <div class="menu-container">
+          <button class="menu-btn">⋯</button>
+          <div class="menu-dropdown">
+            <button>Unverify</button>
+            <button>Delete</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="user-card">
+        <div class="avatar"></div>
+        <div class="user-info">
+          <h4 class="placeholder-name">[User Name]</h4>
+          <p class="placeholder-email">[email@example.com]</p>
+        </div>
+        <div class="menu-container">
+          <button class="menu-btn">⋯</button>
+          <div class="menu-dropdown">
+            <button>Unverify</button>
+            <button>Delete</button>
+          </div>
+        </div>
+      </div>
+    </details>
+  </div>
+
+  <script src="Admindashboard.js"></script>
+</body>
+</html>
