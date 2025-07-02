@@ -41,18 +41,37 @@ body {
 
 /* QR Placeholder */
 .qr-placeholder {
-  width: 180px;
-  height: 180px;
-  margin: 0 auto;
-  background-color: #f1f0f5;
-  border-radius: 50%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #888;
-  font-size: 14px;
+  width: 140px;
+  height: 140px;
+  border: 2px dashed #888;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+  padding: 12px;
+  margin: 20px auto;
   text-align: center;
 }
+
+.qr-placeholder:hover {
+  background-color: #f0f0f0;
+}
+
+.qr-icon {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 5px;
+}
+
+.qr-text {
+  font-size: 14px;
+  color: #555;
+}
+
 
 /* Tabs */
 .tabs {
