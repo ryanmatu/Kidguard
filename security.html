@@ -9,23 +9,23 @@
 </head>
 <body>
   <div class="container">
-    <!-- QR Code Circle -->
+    <!-- QR Icon -->
     <div class="qr-circle">
       <img src="https://cdn-icons-png.flaticon.com/512/2933/2933186.png" alt="QR Icon" />
     </div>
 
-    <!-- Scan / OTP Buttons -->
+    <!-- Buttons -->
     <div class="action-buttons">
-      <button class="active">Scan Code</button>
-      <button>Enter OTP</button>
+      <button id="scanBtn" class="active">Scan Code</button>
+      <button id="otpBtn">Enter OTP</button>
     </div>
 
-    <!-- OTP Input Field -->
-    <div class="input-field">
+    <!-- OTP input (initially hidden) -->
+    <div class="input-field" id="otpField">
       <input type="text" placeholder="Enter OTP" />
     </div>
 
-    <!-- Guardian & Child Fields -->
+    <!-- Profile Placeholders -->
     <div class="profiles">
       <div class="profile-box">
         <div class="image-placeholder"></div>
@@ -37,5 +37,8 @@
       </div>
     </div>
   </div>
+
+  <!-- External JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>

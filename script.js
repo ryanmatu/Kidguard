@@ -13,6 +13,3 @@ otpBtn.addEventListener('click', () => {
   otpBtn.classList.add('active');
   scanBtn.classList.remove('active');
 });
-
-
-

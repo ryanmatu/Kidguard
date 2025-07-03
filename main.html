@@ -2,55 +2,65 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Security Page</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Authorization Hub</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <!-- QR Icon -->
-    <div class="qr-circle">
-      <img src="https://cdn-icons-png.flaticon.com/512/2933/2933186.png" alt="QR Icon" />
-    </div>
 
-    <!-- Buttons -->
-    <div class="action-buttons">
-      <button id="scanBtn" class="active" onclick="toggleOTP('scan')">Scan Code</button>
-      <button id="otpBtn" onclick="toggleOTP('otp')">Enter OTP</button>
-    </div>
-
-    <!-- OTP input (initially hidden) -->
-    <div class="input-field" id="otpField">
-      <input type="text" placeholder="Enter OTP" />
-    </div>
-
-    <!-- Profile Placeholders -->
-    <div class="profiles">
-      <div class="profile-box">
-        <div class="image-placeholder"></div>
-        <p class="name-placeholder">Guardian Name</p>
+    <!-- Header -->
+    <div class="header">
+         <div class="header-left">
+        <a href="dashboard.html" class="icon-btn">&larr;</a>
+        <div class="header-title">Authorization Hub</div>
       </div>
-      <div class="profile-box">
-        <div class="image-placeholder"></div>
-        <p class="name-placeholder">Child Name</p>
+      <div class="icon-btn bell">&#128276;</div>
+    </div>
+
+    <!-- QR Scan Placeholder -->
+    <div class="qr-placeholder">
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCvt5OJnQU4fpJMW0quahf_9bJ4C-5nVdWWg&s" alt="QR Code Icon" class="qr-icon" />
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="active">Generate QR</button>
+      <button>Get OTP</button>
+    </div>
+
+    <!-- Profile Card -->
+    <div class="profile-card">
+      <div class="profile-content">
+        <div class="profile-pic"></div>
+        <h3 class="user-name">[User Name]</h3>
+        <div class="child-info">
+          <p><strong>Child:</strong> <span class="child-name">[Child's Name]</span></p>
+          <span class="status ready">Ready for Pickup</span>
+        </div>
+      
       </div>
     </div>
-  </div>
-<footer>
-      <!-- Bottom Nav -->
+
+    <!-- Bottom Nav -->
     <div class="bottom-nav">
       <div class="nav-center-group">
         <a href="home.html" class="nav-item">
           <div class="nav-icon">⌂</div>
           <div class="nav-label">Home</div>
         </a>
-        </div>
+        <a href="scan.html" class="nav-item active">
+          <div class="nav-icon">⎘</div>
+          <div class="nav-label">QR Scan</div>
+        </a>
+        <a href="history.html" class="nav-item">
+          <div class="nav-icon">☰</div>
+          <div class="nav-label">History</div>
+        </a>
+        
       </div>
     </div>
+
   </div>
-  
-  <!-- External JavaScript -->
-  <script src="script.js"></script>
 </body>
 </html>
